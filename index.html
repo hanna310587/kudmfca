@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KUDMFCA Mobile Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightgreen;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .header, .footer {
+            text-align: center;
+            padding: 10px;
+            color: yellow;
+            background-color: purple;
+        }
+        .header h1 {
+            font-size: 24px;
+            animation: marquee 20s linear infinite;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        .nav-bar {
+            display: flex;
+            justify-content: space-around;
+            background-color: blue;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+        }
+        .nav-bar button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .section {
+            display: none;
+            padding: 20px;
+        }
+        .section.active {
+            display: block;
+        }
+        .image-box {
+            border: 2px solid blue;
+            overflow: hidden;
+            position: relative;
+            height: 200px;
+            text-align: center;
+        }
+        .welcome-box {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .footer {
+            background-color: green;
+            color: white;
+        }
+        .content-box {
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>KINGDOM UNITED DESTINY MINISTERIAL FELLOWSHIP OF CHURCHES</h1>
+    <div><img src="ukdmf logo.jpg" alt="KUDMFCA Logo" style="width: 80px; margin-top: 20px;"></div>
+    <p>Ministry of Reconciliation</p>
+</div>
+
+<div class="nav-bar">
+    <button onclick="showSection('home')">Home</button>
+    <button onclick="showSection('about')">About Us</button>
+    <button onclick="showSection('services')">Our Services</button>
+    <button onclick="showSection('leadership')">Leadership</button>
+    <button onclick="showSection('contact')">Contact</button>
+</div>
+
+<!-- Home Page -->
+<div id="home" class="section active">
+      <h3>Events </h3>
+    <div class="image-box">
+        <img src="ukdmf logo.jpg" alt="Image 1" style="width: 15%; height: 100%;">
+       
+        <p>Our Logo, International Prelate, President, Chairman, Deputy Chairperson, Nairobi Director</p>
+    </div>
+    <div class="welcome-box">
+        <h2>Welcome to KUDMFCA</h2>
+        <p>Our organization aims to bring together clergy and provide a platform for support, unity, and growth. Join us in our mission to empower and uplift communities through faith.</p>
+        <p>Kingdom United Destiny Ministerial Fellowship of Churches Association (KUDMFCA)
+            We are a global network having branches all over, in kenya we have branches in all the 47 couty, heade by the county directors</p>
+    </div>
+</div>
+
+<!-- About Us Page -->
+<div id="about" class="section">
+    <div class="content-box" style="background-color: #ffddc1;">
+        <h3>Mission</h3>
+        <p>Our mission at the Kingdom United Destiny Ministerial Fellowship of Churches Association (KUDMFCA) 
+            is to unite pastors and churches under a common purpose of advancing the Kingdom of God through
+            collaboration, support, and spiritual growth. We are dedicated to empowering clergy, fostering unity 
+            within the body of Christ, and providing resources and guidance to ensure that our members are 
+            equipped to lead their congregations effectively. By promoting mutual respect, shared vision, 
+            and collective action, we aim to build a strong and vibrant network of Christian leaders who are 
+            committed to transforming lives and communities for the glory of God.</p>
+    </div>
+    <div class="content-box" style="background-color: #ffe4e1;">
+        <h3>Vision</h3>
+        <p>Our vision is to see a unified and empowered community of Christian leaders who, through collaboration 
+            and shared purpose, bring about spiritual renewal and positive change in their congregations and 
+            communities. We envision a fellowship where pastors and churches work together in harmony, 
+            reflecting the love and unity of Christ, and where each member is fully equipped to fulfill their God-given 
+            calling. Through our efforts, we strive to create a lasting impact on the world, advancing the Kingdom of 
+            God and glorifying His name in all that we do.</p>
+    </div>
+    <div class="content-box" style="background-color: #e0ffff;">
+        <h3>Core Values</h3>
+        <ul>
+            <li>Integrity</li>
+            <li>Unity</li>
+            <li>Empowerment</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Our Services Page -->
+<div id="services" class="section">
+    <div class="content-box" style="background-color: #f0e68c;">
+        <h3>SACCO</h3>
+        <p>KUDMFCA operates a SACCO to address the financial needs of our clergy members.</p>
+    </div>
+    <div class="content-box" style="background-color: #dda0dd;">
+        <h3>Theological Bible School</h3>
+        <p>Providing theological education and training for our members.</p>
+    </div>
+    <div class="content-box" style="background-color: #afeeee;">
+        <h3>Member Benefits</h3>
+        <p>Members enjoy unity, church live coverage, and more.</p>
+    </div>
+</div>
+
+<!-- National Leadership Page -->
+<div id="leadership" class="section">
+    <div class="content-box">
+        <img src="prelate .jpg" alt="International Prelate" style="width: 15%; height: 30%;">
+        <h3>International Prelate</h3>
+        <p>Apostle Dr. Renee</p>
+    </div>
+    <div class="content-box">
+        <img src="president .jpg" alt="President" style="width:15%; height: 30%;">
+        <h3>President and THE CEO</h3>
+        <p>Amb. Dr. P.K. Mburu</p>
+    </div>
+    <div class="content-box">
+        <img src="chairman photo.jpg" alt="Chairman" style="width: 15%; height: 25%;">>
+        <h3>Chairman</h3>
+        <p>Apostle Benson Musymi</p>
+    </div>
+</div>
+
+<!-- Contact Page -->
+<div id="contact" class="section">
+    <h3>Contact Us</h3>
+    <p>Location: Information House Room 519, Nairobi,  Kenya</p>
+    <p>Email: <a href="mailto:kdmfassociation@gmail.com">kdmfassociation@gmail.com</a></p>
+    <p>Phone: 0742 033 825</p>
+    <p>Phone: 0799 966 949</p>
+    <p>All rights reserved.</p>
+    <p><a href="https://forms.google.com/your-join-form-link" target="_blank">Join Us</a></p>
+</div>
+
+<div class="footer">
+    <p>&copy; 2024 KUDMFCA. All Rights Reserved.</p>
+    <p><a href="https://forms.gle/x6eDp7KEubC3VFhS8" target="_blank" style="color: yellow; font-weight: bold;">Join Us</a></p>
+  </footer>
+
+</body>
+</html>
+
+</div>
+
+<script>
+    function showSection(sectionId) {
+        document.querySelectorAll('.section').forEach(section => {
+            section.classList.remove('active');
+        });
+        document.getElementById(sectionId).classList.add('active');
+    }
+</script>
+
+</body>
+</html>
